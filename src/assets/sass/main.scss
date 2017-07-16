@@ -1,0 +1,413 @@
+body {
+    background: #EEE;
+}
+
+.headerSearch {
+    background: #FFE600;
+    position: fixed;
+    z-index: 999;
+
+    .form-group {
+        margin: 8px 0;
+        .inputSearch {
+            color: #999;
+            font-size: 18px;
+        } 
+        .input-group-addon {
+            cursor: pointer;
+        }
+    }
+
+    .logoHeader {
+        margin: 7px 0;
+    }
+}
+
+.itemsList {
+    background: #FFF;
+    margin-top: 66px;
+    .item {
+        padding: 16px 0;
+        margin: 0 16px;
+        display: flex;
+        flex-direction: row;
+        color: #666;
+        cursor: pointer;
+        .flexes{
+            flex: 2;
+        }
+        .flex-6 {
+            flex: 6;
+        }
+        .itemPicture {
+            width: 180px;
+            height: 180px;
+            border-radius: 4px;
+            margin-right: 16px;
+        }
+        .itemPrice {
+            font-size: 24px;
+            margin-bottom: 32px;
+            padding-top: 16px;
+            .shippingIcon {
+                position: relative;
+                top: -3px;
+                left: 6px;
+            }
+        }
+        .itemTitle {
+            font-size: 18px;
+        }
+        .itemCondition{
+            padding-top: 16px;
+            font-size: 12px;
+        }
+        &+ .item {
+            border-top: 1px solid #EEE;
+        }
+    }
+
+}
+
+.productDetails {
+    background: #FFF;
+    display: flex;
+    flex-direction: row;
+    color: #333;
+    margin-top: 66px;
+    .flex-3 {
+        flex: 3;
+    }
+    .flex-7 {
+        flex: 7;
+        align-items: center;
+    }
+    .prefixDescription {
+        font-size: 28px;
+        margin: 0 0 32px 32px;
+    }
+    .description {
+        font-size: 16px;
+        margin: 0 0 32px 32px;
+        max-width: 680px !important;
+    }
+    .productImageBox {
+        width: 100%;
+        text-align: center;
+    }
+    .productImage {
+        width: 680px;
+
+    }
+    .prefixDetails {
+        font-size: 14px;
+        margin-top: 32px;
+    }
+    .productTitle {
+        font-size: 24px;
+        margin-top: 16px;
+        padding-right: 32px;
+    }
+    .productPrice {
+        font-size: 46px;
+        margin: 32px 0;
+        .decimals {
+            font-size: 22px;
+            position: relative;
+            top: -16px;
+        }
+    }
+    .buttonBox {
+        padding-right: 32px;
+        .btn {
+            width: 100%;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.activities-wrapper {
+    width: 100%;
+    margin-bottom: 30px;
+
+
+    .activity-box {
+        width: 100%;
+        padding: 10px 30px 10px 10px;
+        background: #DEDEDE;
+        margin-top: 10px;
+        cursor: pointer;
+        border-radius: 3px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: #5e6161;
+        border: 1px solid #FFF;
+
+        &.active {
+            background: #ebebeb;
+            -webkit-box-shadow: 5px 5px 5px 0px rgba(94,97,97,1);
+            -moz-box-shadow: 5px 5px 5px 0px rgba(94,97,97,1);
+            box-shadow: 5px 5px 5px 0px rgba(94,97,97,1);
+        }
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+        &.activity-box-add {
+            background: #FFF;
+            color: #ff5a00;
+            border: 1px dashed #ff5a00;
+        }
+        .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+        }
+    }
+    .activity-form {
+        padding: 20px;
+        max-width: 700px;
+        margin: 15px;
+        background: #EBEBEB;
+        -webkit-box-shadow: 5px 5px 5px 0px rgba(94,97,97,1);
+        -moz-box-shadow: 5px 5px 5px 0px rgba(94,97,97,1);
+        box-shadow: 5px 5px 5px 0px rgba(94,97,97,1);
+
+        .activity-label {
+            max-width: 250px;
+        }
+    }
+    .selectize-control.multi .selectize-input > div.active {
+        background: #efefef;
+        color: #333;
+    }
+    .selectize-control.multi .selectize-input > div {
+        display: block;
+        padding: 4px 5px;;
+        cursor: auto;
+    }
+    .selectize-control.plugin-remove_button [data-value] .remove {
+        line-height: 28px;
+        font-size: 14px;
+    }
+}
+.activity-rule-group {
+    position: relative;
+    background: url('../mobile.jpg') no-repeat;
+    border: 1px solid #b3b3b3;
+    background-size: 300px;
+    padding-top: 67px; 
+    width: 300px;
+    height: 535px;
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(94,97,97,1);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(94,97,97,1);
+    box-shadow: 5px 5px 5px 0px rgba(94,97,97,1);
+    .scrollable-content {
+        position: relative;        
+        height: 387px;
+
+        &.active-legend {
+            height: 300px;
+        }
+    }
+    .scrollable-content-wrapper {
+        position: relative;
+        height: 387px;
+
+        &.active-legend {
+            height: 300px;
+
+            .floater-button {
+                right: 20px;
+            }
+        }
+    }
+    .activity-list {
+        padding: 10px;
+        display: block;
+        border-bottom: 1px solid #dbdbdb;
+        cursor: pointer;
+
+        &:hover {
+            background: #f6f6f6;
+        }
+
+        td {
+            vertical-align: middle;
+        }
+    }
+    .floater-button {
+        position: absolute;
+        right: 5px;
+        bottom: 5px;
+        cursor: pointer;
+        i {
+            background: #fff;
+            border-radius: 50px;
+        }
+    }
+    .subtitle-box {
+        position: absolute;
+        bottom: 0;
+        border-top: 1px solid #dbdbdb;
+        width: 100%;
+        margin-bottom: 40px;
+        height: 40px;
+        overflow: hidden;
+
+        &.active {
+            height: auto;
+        }
+
+        .subtitle-header {
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px;
+            i {
+                cursor: pointer;
+                float: right;
+                margin-top: -3px;
+            }
+        }
+        ul {
+            list-style-type: none;
+            li {
+                padding: 10px;
+            }
+        }
+
+        tr {
+            padding-bottom: 5px;
+            display: block;
+
+            td {
+                vertical-align: middle;
+            }
+        }
+
+    }
+}
+.activity-rules {
+    width: 600px;
+
+
+    .rule-box {
+        width: 100%;
+        padding: 10px 30px 10px 10px;
+        background: #DEDEDE;
+        margin-bottom: 10px;
+        cursor: pointer;
+        border-radius: 3px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: #5e6161;
+        border: 1px solid #FFF;
+        position: relative;
+
+        &.active {
+            background: #ebebeb;
+            -webkit-box-shadow: 5px 5px 5px 0px rgba(94,97,97,1);
+            -moz-box-shadow: 5px 5px 5px 0px rgba(94,97,97,1);
+            box-shadow: 5px 5px 5px 0px rgba(94,97,97,1);
+        }
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+        &.rule-box-add {
+            background: #FFF;
+            color: #ff5a00;
+            border: 1px dashed #ff5a00;
+        }
+        .close-btn {
+            position: absolute;
+            top: 9px;
+            right: 7px;
+        }
+    }
+}
+.btn {
+    &.btn-tf-default {
+        border: 2px solid #ff5a00;
+        border-radius: 5px;
+        background: #FFF;
+        color: #ff5a00;
+        font-weight: bold;
+    }
+    &.btn-flat {
+        color: #ff5a00;
+        font-weight: bold;
+        background: none;
+        &.btn-flat-grey {
+            color: #5e6161;
+        }
+    }
+}
+
+#divRespostas {
+    h4 {
+        clear: both;
+        font-size: 12px;
+        padding-bottom: 15px;
+        margin: 0;
+        font-weight: 500;
+        color: #ff5a00;
+    }
+    .answer-item {
+        margin-bottom: 10px;
+        input[type="text"], select {
+            width: 100%;
+        }
+    }
+}
+
+.sampleSurveyConfig {
+    .sampleSurveyForm {
+        .questionBox {
+            padding: 10px 0;
+
+            .questionTitle {
+                font-size:16px;
+            }
+            .answerSelect{
+                font-size: 14px;
+                color: #929496;
+                margin-top: 5px;
+                .fa {
+                    color: #50b5ab;
+                    padding-right: 5px;
+                }
+                .text {
+                    &:hover {
+                        color: #50b5ab;
+                        cursor: pointer;
+                    }
+                    &.selected {
+                        font-weight: bold;
+                        color: #50b5ab;
+                    }
+                }
+            }
+            & + .questionBox {
+                border-top: 1px solid #DDD;
+            }
+        }
+    }
+}

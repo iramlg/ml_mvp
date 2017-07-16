@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>{title}</title>
+	<meta name="description" content="MVP de produto Mercado Livre">
+	<meta name="author" content="Iram Garcia">
+	<link rel="stylesheet" type="text/css" href="{cdnUrl}css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="{cdnUrl}css/ml_mvp.min.css" />
+</head>
+
+<body>	
+	 <div class="body-container" id="reactDiv"></div>
+</body>
+<script type="text/javascript" src="{cdnUrl}js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="{cdnUrl}js/app.js"></script>
+</html>
